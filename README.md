@@ -5,7 +5,8 @@ Welcome to **SHOEMASH**, a fun project that mimics the FACEMASH version from the
 ## 🎥 Check It Out!
 Want to see where the inspiration came from? Watch this scene where Zuckerberg develops FACEMASH:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KdtPNRzuKrk?si=9_hgJ08EDnWzYfu1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtu.be/KdtPNRzuKrk?si=ZoBwChBoW-Dh09Lk" frameborder="0" allowfullscreen></iframe>
+
 
 ## 🚀 Getting Started
 
