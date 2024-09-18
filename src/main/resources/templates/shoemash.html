@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Shoe Mash</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            background-color: #a52a2a;
+            color: white;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .shoe-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .shoe-container form {
+            margin: 0 20px;
+        }
+
+        .shoe-container img {
+            max-width: 250px;
+            max-height: 350px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .vs-text {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0 30px;
+            color: black;
+        }
+
+        .shoe-name {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>FACEMASH</h1>
+    <h2>Who's Hotter? Click to Choose.</h2>
+
+    <div class="shoe-container">
+        <!-- First Shoe Form -->
+        <form action="/vote" method="POST">
+            <input type="hidden" name="shoeId" th:value="${shoe1.id}">
+            <input type="hidden" name="position" value="left"> <!-- Track position -->
+            <button type="submit" style="border: none; background: none;">
+                <img th:src="@{${shoe1.imageUrl}}" alt="Shoe 1" />
+            </button>
+        </form>
+
+        <!-- VS text -->
+        <span class="vs-text">OR</span>
+
+        <!-- Second Shoe Form -->
+        <form action="/vote" method="POST">
+            <input type="hidden" name="shoeId" th:value="${shoe2.id}">
+            <input type="hidden" name="position" value="right"> <!-- Track position -->
+            <button type="submit" style="border: none; background: none;">
+                <img th:src="@{${shoe2.imageUrl}}" alt="Shoe 2" />
+            </button>
+        </form>
+    </div>
+</body>
+</html>
