@@ -11,7 +11,7 @@ Want to see where the inspiration came from? Watch this scene where Zuckerberg d
 
 ### Prerequisites
 Make sure you have the following installed on your machine:
-- Java 11 or higher
+- Java 17 or higher
 - Maven
 - VS Code (with Java extension pack)
 
